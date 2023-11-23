@@ -1,23 +1,60 @@
 import React from "react";
 import Link from "next/link";
+import BannerPage from "@/components/Banner";
 
 function LichSu() {
   return (
-    <main className="container my-5">
-      <h3>Lịch sử Việt Nam</h3>
-      {total.map((item) => {
-        return (
-          <div key={item.id}>
-            <Link
-              href={`/pdf-book/history/lich-su-viet-nam-bang-tranh-tap-${item.id}.pdf`}
-              target="_blank"
-            >
-              Lịch sử Việt Nam tập {item.id} - {item.title}
-            </Link>
-          </div>
-        );
-      })}
-    </main>
+    <>
+      <BannerPage title={"Sách Lịch Sử"} />
+      <main className="container my-5">
+        <h3 className="my-3">Lịch sử Việt Nam</h3>
+        {total.map((item) => {
+          return (
+            <div key={item.id}>
+              <Link
+                href={`/pdf-book/history/lich-su-viet-nam-bang-tranh-tap-${item.id}.pdf`}
+                target="_blank"
+              >
+                Lịch sử Việt Nam tập {item.id} - {item.title}
+              </Link>
+            </div>
+          );
+        })}
+        <h3 className="my-3">
+          Các trận đánh quan trọng trong lịch sử Việt Nam
+        </h3>
+        <div>
+          <Link
+            href={
+              "/pdf-book/history/Cac-tran-dau-quan-trong-trong-lich-su-viet-nam.pdf"
+            }
+            target="_blank"
+          >
+            Các trận đánh quan trọng trong lịch sử Việt Nam
+          </Link>
+        </div>
+        <h3 className="my-3">Theo dòng Lịch sử</h3>
+        <div>
+          <Link
+            href={"/pdf-book/history/Theo-dong-lich-su.pdf"}
+            target="_blank"
+          >
+            Theo dòng Lịch sử
+          </Link>
+        </div>
+        <h3 className="my-3">Việt Nam thời Tây Sơn</h3>
+        <div>
+          <Link
+            href={
+              "/pdf-book/history/Viet-nam-thoi-tay-son-lich-su-noi-chien-1771-1802.pdf"
+            }
+            target="_blank"
+          >
+            Thời nội chiến 1771 - 1802
+          </Link>
+        </div>
+      </main>
+    </>
   );
 }
 
