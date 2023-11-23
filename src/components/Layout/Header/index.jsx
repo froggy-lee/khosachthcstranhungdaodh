@@ -28,22 +28,22 @@ function Header() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Page 1
+                  Sách Giáo Khoa
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Page 2
+                <a className="nav-link" href="/lich-su">
+                  Sách Lịch Sử
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Page 3
+                <a className="nav-link" href="/english">
+                  Sách Tiếng Anh
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Page 4
+                <a className="nav-link" href="/van-hoc">
+                  Sách Văn Học
                 </a>
               </li>
             </ul>

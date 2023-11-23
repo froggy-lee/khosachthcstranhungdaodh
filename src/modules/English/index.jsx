@@ -1,12 +1,13 @@
 import React from "react";
 import BannerPage from "@/components/Banner";
 import Link from "next/link";
+import * as S from "./styles";
 
 function English() {
   return (
     <>
       <BannerPage title={"Tài Liệu Tiếng Anh"} />
-      <main className="container my-5">
+      <S.Wrapper className="container my-5">
         <h3 className="my-3">
           Chuyên đề ngữ pháp và bài tập bồi dưỡng HSG lớp 6
         </h3>
@@ -42,7 +43,7 @@ function English() {
             Giáo trình bồi dưỡng học sinh giỏi thi chuyên Anh
           </Link>
         </div>
-      </main>
+      </S.Wrapper>
     </>
   );
 }

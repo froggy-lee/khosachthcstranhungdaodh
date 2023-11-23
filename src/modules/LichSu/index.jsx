@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import BannerPage from "@/components/Banner";
+import * as S from "./styles";
 
 function LichSu() {
   return (
     <>
       <BannerPage title={"Sách Lịch Sử"} />
-      <main className="container my-5">
+      <S.Wrapper className="container my-5">
         <h3 className="my-3">Lịch sử Việt Nam</h3>
         {total.map((item) => {
           return (
@@ -53,7 +54,7 @@ function LichSu() {
             Thời nội chiến 1771 - 1802
           </Link>
         </div>
-      </main>
+      </S.Wrapper>
     </>
   );
 }
