@@ -6,6 +6,10 @@ export const Wrapper = styled.main`
   border: 1px solid darkgray;
   border-radius: 10px;
   padding: 1rem 2rem;
+  a {
+    color: var(--primary);
+    text-decoration: none;
+  }
   h3 {
     color: #008000;
   }
