@@ -21,6 +21,9 @@ export const Banner = styled.article`
     h3 {
       font-size: 20px;
     }
+    h4 {
+      font-size: 18px;
+    }
   }
   @media (max-width: 767px) {
     min-height: 220px;
@@ -30,6 +33,9 @@ export const Banner = styled.article`
     }
     h3 {
       font-size: 16px;
+    }
+    h4 {
+      font-size: 12px;
     }
   }
 `;

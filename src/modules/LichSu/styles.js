@@ -10,6 +10,10 @@ export const Wrapper = styled.main`
     color: #008000;
   }
   @media (max-width: 567px) {
+    font-size: 14px;
     padding: 1rem;
+    h3 {
+      font-size: 18px;
+    }
   }
 `;
