@@ -6,29 +6,30 @@ import Slider from "react-slick";
 import { listBook } from "./data";
 import Image from "next/image";
 import * as S from "./styles";
+import "@react-pdf-viewer/core/lib/styles/index.css";
 
 function OtherBookSection() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1199,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          initialSlide: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
         },
       },
       {
         breakpoint: 767,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         },
       },
       {
@@ -42,7 +43,7 @@ function OtherBookSection() {
   };
   return (
     <section className="container mt-5">
-      <h3 className="title-section">Sách thể loại khác</h3>
+      <h3 className="title-section">Sách tham khảo</h3>
       <hr />
       <S.SlideWrapper>
         <Slider {...settings}>
