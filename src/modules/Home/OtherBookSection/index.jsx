@@ -6,9 +6,11 @@ import Slider from "react-slick";
 import { listBook } from "./data";
 import Image from "next/image";
 import * as S from "./styles";
-import "@react-pdf-viewer/core/lib/styles/index.css";
+import { useRouter } from "next/navigation";
 
 function OtherBookSection() {
+  const router = useRouter();
+
   const settings = {
     dots: true,
     infinite: true,
@@ -50,7 +52,7 @@ function OtherBookSection() {
           {listBook.map((book) => {
             return (
               <S.BookItem key={book.id}>
-                <S.BookWrapper>
+                <S.BookWrapper onClick={() => router.push(book.href)}>
                   <Image src={book?.image} fill alt="Book" />
                 </S.BookWrapper>
               </S.BookItem>

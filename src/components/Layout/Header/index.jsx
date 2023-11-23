@@ -10,7 +10,7 @@ function Header() {
         style={{ backgroundColor: "#e3f2fd" }}
       >
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             Trang Chủ
           </a>
           <button
