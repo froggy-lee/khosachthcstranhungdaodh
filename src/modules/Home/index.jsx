@@ -2,6 +2,7 @@ import React from "react";
 import BannerSection from "./BannerSection";
 import ListBookSection from "./ListBookSection";
 import OtherBookSection from "./OtherBookSection";
+import StatisticalSection from "./StatisticalSection";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <BannerSection />
       <ListBookSection />
       <OtherBookSection />
+      <StatisticalSection />
     </>
   );
 }
