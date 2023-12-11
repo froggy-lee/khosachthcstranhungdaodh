@@ -1,7 +1,7 @@
 import React from "react";
 import English from "@/modules/English";
 
-function english(props) {
+function english() {
   return (
     <>
       <English />

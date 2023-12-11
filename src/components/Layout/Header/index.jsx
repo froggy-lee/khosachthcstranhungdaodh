@@ -2,11 +2,9 @@
 import React from "react";
 import * as S from "./styles";
 import { FcSearch } from "react-icons/fc";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function Header() {
-  const pathName = usePathname();
   return (
     <header>
       <S.NavWrapper
@@ -30,7 +28,55 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              {menu.map((item) => {
+              <li className="nav-item">
+                <Link className="nav-link" href="#">
+                  Sách Giáo Khoa
+                </Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sách Tham Khảo
+                </Link>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item fw-bold" href="van-hoc">
+                      Văn Học
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item fw-bold" href="english">
+                      Tiếng Anh
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item fw-bold" href="lich-su">
+                      Lịch Sử
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="thieu-nhi">
+                  Sách Thiếu Nhi
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="bai-viet-hoc-sinh">
+                  Bài Viết Của Học Sinh
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="the-loai-khac">
+                  Thể Loại Khác
+                </Link>
+              </li>
+              {/* {menu.map((item) => {
                 return (
                   <li className="nav-item" key={item.id}>
                     <Link
@@ -44,7 +90,7 @@ function Header() {
                     </Link>
                   </li>
                 );
-              })}
+              })} */}
             </ul>
             <form className="d-flex" role="search">
               <input

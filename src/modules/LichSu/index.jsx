@@ -6,7 +6,7 @@ import * as S from "./styles";
 function LichSu() {
   return (
     <>
-      <BannerPage title={"Sách Lịch Sử"} />
+      <BannerPage title={"Tài Liệu Lịch Sử"} />
       <S.Wrapper className="container my-5">
         <h3 className="my-3">Lịch sử Việt Nam</h3>
         {total.map((item) => {
