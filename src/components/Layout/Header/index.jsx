@@ -59,6 +59,11 @@ function Header() {
                       Lịch Sử
                     </Link>
                   </li>
+                  <li>
+                    <Link className="dropdown-item fw-bold" href="hoa-hoc">
+                      Hóa Học
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li className="nav-item">

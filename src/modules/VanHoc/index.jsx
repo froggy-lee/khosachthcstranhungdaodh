@@ -35,6 +35,17 @@ function VanHoc() {
             Nhật kí Đặng Thùy Trâm
           </Link>
         </div>
+        <h3 className="my-3">
+          Phương pháp làm bài văn nghị luận lớp 8-9 - Nguyễn Công Huấn
+        </h3>
+        <div>
+          <Link
+            href={"/pdf-book/vanhoc/pp-lam-bai-van-nghi-luan.pdf"}
+            target="_blank"
+          >
+            Phương pháp làm bài văn nghị luận lớp 8-9
+          </Link>
+        </div>
       </S.Wrapper>
     </>
   );
