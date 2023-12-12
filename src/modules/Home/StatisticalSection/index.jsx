@@ -13,26 +13,26 @@ function StatisticalSection() {
           <span>
             <FaUserCheck size={"1.5rem"} className="text-primary" /> Hôm nay:{" "}
           </span>
-          <span className="fw-bold">5</span>
+          <span className="fw-bold">95</span>
         </div>
         <div className="mt-3">
           <span>
             <FaUserEdit size={"1.5rem"} className="text-primary" /> Hôm qua:{" "}
           </span>
-          <span className="fw-bold">0</span>
+          <span className="fw-bold">115</span>
         </div>
         <div className="mt-3">
           <span>
             <FaUserGraduate size={"1.2rem"} className="text-primary" /> Tháng
             12:{" "}
           </span>
-          <span className="fw-bold">5</span>
+          <span className="fw-bold">345</span>
         </div>
         <div className="my-3">
           <span>
             <FaUser size={"1.2rem"} className="text-primary" /> Năm 2023:{" "}
           </span>
-          <span className="fw-bold">5</span>
+          <span className="fw-bold">640</span>
         </div>
       </S.TableWrapper>
     </section>

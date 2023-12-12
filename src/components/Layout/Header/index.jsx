@@ -11,7 +11,7 @@ function Header() {
         className="navbar navbar-expand-lg py-3 "
         style={{ backgroundColor: "#e3f2fd" }}
       >
-        <div className="container">
+        <div className="container-fluid px-xxl-4">
           <Link className="navbar-brand" href="/">
             Trang Chủ
           </Link>
@@ -68,17 +68,26 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="thieu-nhi">
-                  Sách Thiếu Nhi
+                  Văn của chúng em
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="bai-viet-hoc-sinh">
-                  Bài Viết Của Học Sinh
+                  Bài Viết Học Sinh
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="the-loai-khac">
                   Thể Loại Khác
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  href="https://padlet.com/ledungthcs/k-nh-tr-c-tuy-n-h-tr-h-c-t-p-b-m-n-gi-o-d-c-a-ph-ng-l-p-6-t--z9try8s16twf6hli"
+                  target="_blank"
+                >
+                  Tài liệu GD Địa phương
                 </Link>
               </li>
               {/* {menu.map((item) => {
