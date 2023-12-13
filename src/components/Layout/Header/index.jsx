@@ -68,12 +68,16 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" href="thieu-nhi">
-                  Văn của chúng em
+                  Sách Thiếu Nhi
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="bai-viet-hoc-sinh">
-                  Bài Viết Học Sinh
+                <Link
+                  className="nav-link"
+                  href="https://trangvancuachungem.wixsite.com/website"
+                  target="_bank"
+                >
+                  Văn của chúng em
                 </Link>
               </li>
               <li className="nav-item">
